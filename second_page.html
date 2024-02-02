@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Друга сторінка</title>
+    <style>
+        body {
+            text-align: center;
+            padding: 50px;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin: auto;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <label for="name">Введіть своє ім'я</label>
+        <br>
+        <input type="text" id="name" placeholder="Ваша відповідь">
+        <br>
+        <button onclick="showAnswer()">Натисніть тут</button>
+        <script>
+            function showAnswer() {
+                var answer = document.getElementById("name").value;
+                alert("Доброго дня, " + answer + "!");
+            }
+        </script>
+	<p><a href="index.html">Повернутися на першу сторінку</a></p>
+    </div>
+</body>
+</html>
